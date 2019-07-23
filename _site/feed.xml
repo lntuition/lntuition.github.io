@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-23T21:54:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">lntuitionist</title><subtitle>C로 시를 쓰는 바보 개발자</subtitle><entry><title type="html">Github 블로그를 시작하였습니다.</title><link href="http://localhost:4000/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4/" rel="alternate" type="text/html" title="Github 블로그를 시작하였습니다." /><published>2019-07-23T00:00:00+09:00</published><updated>2019-07-23T00:00:00+09:00</updated><id>http://localhost:4000/Github%20%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4</id><content type="html" xml:base="http://localhost:4000/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4/">&lt;p&gt;Github 블로그를 시작하면서 드는 생각들&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;github-블로그를-시작하면서&quot;&gt;Github 블로그를 시작하면서&lt;/h2&gt;
+&lt;p&gt;2019년이 반이나 벌써 지나버린 지금에서야 Github 블로그를 시작하네요. 
+실제로 jekyll을 이전에 흘깃 보고 “언젠가는 해야겠지..” 라며 만들어놓은 repo가 저에게 버려진채로 방치되어있었죠. 
+새로운 마음으로 새로운 repo와 함께 Github 블로그를 시작하려 합니다 :)&lt;/p&gt;
+
+&lt;h2 id=&quot;근황&quot;&gt;근황&lt;/h2&gt;
+&lt;p&gt;학생신분을 졸업하고 어떻게 그럭저럭 괜찮은 회사에 입사했습니다.
+회사이야기에 대해서는 좀더 insight가 생기고 기회가 된다면 할 수 있는 날이 오면 좋겠네요.
+아무튼 이제 주니어 개발자로서의 길을 조금씩이나마 걸어보려 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;앞으로의-계획&quot;&gt;앞으로의 계획&lt;/h2&gt;
+&lt;p&gt;올해는 부족한 실력을 깨우치는 해가 될것같습니다. 
+좋은 프로젝트를 만들 만한 아이디어도 실력도 지금의 제게는 좀 많이 부족한것 같더라고요.
+그래서 올해를 “TOY PROJECT”의 해로 만들고자 합니다.
+이것저것 가리지 않고 잡식성(?)스럽게 뭔가를 해보는 것도 좋을거 같더라구요.
+일단은 최근 간단하게 만들어보았던 Chrome-extension에 대한 이야기를 시작으로 공부하는 또는 공부하려는 내용들을 많이 적어보려고 합니다.&lt;/p&gt;</content><author><name></name></author><category term="잡담" /><category term="이야기" /><summary type="html">Github 블로그를 시작하면서 드는 생각들</summary></entry></feed>
