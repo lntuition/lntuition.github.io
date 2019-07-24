@@ -13,6 +13,8 @@ avatar: https://avatars0.githubusercontent.com/u/34061042?s=460&v=4
 navigation:
   - name: Blog
     url: /
+  - name: Tags
+    url: /tags
   - name: Github
     url: https://github.com/lntuition
 
@@ -23,7 +25,7 @@ paginate: 5
 footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
-  email:
+  email: ekffu200098@gmail.com
   facebook:
   flickr:
   github: lntuition
