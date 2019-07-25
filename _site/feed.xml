@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-24T20:42:09+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">lntuitionist</title><subtitle>C로 시를 쓰는 바보 개발자</subtitle><entry><title type="html">Github 블로그를 시작하였습니다.</title><link href="http://localhost:4000/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4/" rel="alternate" type="text/html" title="Github 블로그를 시작하였습니다." /><published>2019-07-23T00:00:00+09:00</published><updated>2019-07-23T00:00:00+09:00</updated><id>http://localhost:4000/Github%20%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC%20%EC%8B%9C%EC%9E%91%ED%95%98%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4</id><content type="html" xml:base="http://localhost:4000/Github-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4/">&lt;p&gt;Github 블로그를 시작하면서 드는 생각들&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>C로 시를 쓰는 바보 개발자</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 25 Jul 2019 20:25:08 +0900</pubDate>
+    <lastBuildDate>Thu, 25 Jul 2019 20:25:08 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Github 블로그를 시작하였습니다.</title>
+        <description>&lt;p&gt;Github 블로그를 시작하면서 드는 생각들&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -17,4 +30,19 @@
 좋은 프로젝트를 만들 만한 아이디어도 실력도 지금의 제게는 좀 많이 부족한것 같더라고요.
 그래서 올해를 “TOY PROJECT”의 해로 만들고자 합니다.
 이것저것 가리지 않고 잡식성(?)스럽게 뭔가를 해보는 것도 좋을거 같더라구요.
-일단은 최근 간단하게 만들어보았던 Chrome-extension에 대한 이야기를 시작으로 공부하는 또는 공부하려는 내용들을 많이 적어보려고 합니다.&lt;/p&gt;</content><author><name></name></author><category term="잡담" /><category term="이야기" /><summary type="html">Github 블로그를 시작하면서 드는 생각들</summary></entry></feed>
+일단은 최근 간단하게 만들어보았던 Chrome-extension에 대한 이야기를 시작으로 공부하는 또는 공부하려는 내용들을 많이 적어보려고 합니다.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Jul 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/Github-blog-start/</link>
+        <guid isPermaLink="true">http://localhost:4000/Github-blog-start/</guid>
+        
+        <category>잡담</category>
+        
+        <category>이야기</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
+
