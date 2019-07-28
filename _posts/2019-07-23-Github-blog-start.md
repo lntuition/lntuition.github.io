@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Github 블로그를 시작하였습니다."
-tags: [잡담, 이야기]
+tags: [이야기]
 comments: true
 ---
 
