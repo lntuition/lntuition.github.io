@@ -15,7 +15,7 @@ comments: true
 저는 주로 야구를 네이버 스포츠에 가서 보는데 TV 중계를 틀때마다 항상 광고가 나오곤 합니다. 
 그럼 매번 Skip 버튼을 눌러줘야하죠. 
 그리고 명색은 개발자인 저는 이런 생각을 합니다.
-<center> <b> "이거 자동으로 Skip 해주는 소스를 짤 수 있지 않을까? </b> </center>
+<center> <b> "이거 자동으로 Skip 해주는 소스를 짤 수 있지 않을까?" </b> </center>
 
 ## Manifest
 크롬 익스텐션에서 일종의 config 역할을 하는것이 바로 manifest.json 파일입니다. 
