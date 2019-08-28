@@ -146,7 +146,7 @@ Option.html 을 통해 사용자 인터페이스를 구현하고 Chrome storage 
 ## 끝내면서
 사실 글 쓰면서 느끼는건데 그렇게 어려운 점은 많지 않음에도 불구하고 적지 않는 시간이 걸린것 같네요.
 말만 번지르르한 **개발자**에서 벗어나기 위해 부단히 노력해야겠습니다.
-전체 소스가 들어있는 [Github](https://github.com/lntuition/Chrome-Auto-scriptor)는 여기로 들어가실수 있구요, 
+전체 소스가 들어있는 [Github](https://github.com/lntuition/Toy-Project/tree/master/Chrome-Auto-Scriptor/)는 여기로 들어가실수 있구요, 
 Publish된 [Extension](https://chrome.google.com/webstore/detail/chrome-auto-scriptor/ajemfnoiodjboeloinfigmooikjbcccm)은 여기서 확인할 수 있습니다.
 
 <center> <b> "사소한 것에서 또 다른 재미있는 Toy Project를 찾아서 오겠습니다" </b> </center>
