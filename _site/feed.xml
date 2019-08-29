@@ -5,8 +5,8 @@
     <description>C로 시를 쓰는 바보 개발자</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 28 Aug 2019 22:53:23 +0900</pubDate>
-    <lastBuildDate>Wed, 28 Aug 2019 22:53:23 +0900</lastBuildDate>
+    <pubDate>Thu, 29 Aug 2019 19:23:02 +0900</pubDate>
+    <lastBuildDate>Thu, 29 Aug 2019 19:23:02 +0900</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -86,13 +86,62 @@ apt는 dpkg 보다 높은 level의 tool 이므로 자동으로 dependency를 찾
       </item>
     
       <item>
-        <title>간단한 Chrome-extension 제작해보기 (2)</title>
-        <description>&lt;p&gt;간단한 Chrome-extension 제작해보기 (2) - Javascript 편&lt;/p&gt;
+        <title>간단한 Chrome-extension 제작해보기</title>
+        <description>&lt;p&gt;간단한 Chrome-extension 제작해보기&lt;/p&gt;
 
 &lt;hr /&gt;
 
+&lt;h2 id=&quot;시작하면서&quot;&gt;시작하면서&lt;/h2&gt;
+&lt;p&gt;회사에 입사하고 나서 한동안은 집-회사만을 반복하는 평일이 지나가더군요. 
+덕분에(?) 학생때는 그다지 주기적인 삶을 살지 않았기때문에 챙겨보지 못했던 야구경기를 챙겨볼 수 있게되었습니다.
+저는 주로 야구를 네이버 스포츠에 가서 보는데 TV 중계를 틀때마다 항상 광고가 나오곤 합니다. 
+그럼 매번 Skip 버튼을 눌러줘야하죠. 
+그리고 명색은 개발자인 저는 이런 생각을 합니다.&lt;/p&gt;
+&lt;center&gt; &lt;b&gt; &quot;이거 자동으로 Skip 해주는 소스를 짤 수 있지 않을까?&quot; &lt;/b&gt; &lt;/center&gt;
+
+&lt;h2 id=&quot;manifest&quot;&gt;Manifest&lt;/h2&gt;
+&lt;p&gt;크롬 익스텐션에서 일종의 config 역할을 하는것이 바로 manifest.json 파일입니다. 
+Text editor를 이용하여 manifest.json 파일을 만든 후 다음과 같이 아래에 입력해 보죠.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+    &quot;name&quot;: &quot;Chrome-extension practice&quot;,
+    &quot;version&quot;: &quot;1.0&quot;,
+    &quot;description&quot;: &quot;Chrome-extension practice&quot;,
+    &quot;manifest_version&quot;: 2,
+    &quot;content_scripts&quot;: [
+        {
+            &quot;js&quot;: [&quot;main.js&quot;],
+            &quot;matches&quot;: [&quot;https://sports.naver.com/*&quot;],
+            &quot;run_at&quot;: &quot;document_end&quot;
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;감이 좋으신 분들은 바로 아시겠지만, 위 Manifest를 통해서 우리가 만들어볼 크롬 익스텐션은 네이버 스포츠에 들어갔을때 document의 로딩이 끝난 후(DOM이 완료된 직후)에 main.js를 실행할 것입니다.
+일단은 간단하게 main.js에 &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log(&quot;Hello World&quot;);&lt;/code&gt; 를 입력한 후 위에서 만든 manifest와 같이 폴더에 넣어서 저장해 둡시다.&lt;/p&gt;
+
+&lt;h2 id=&quot;개발자-모드로-시작하기&quot;&gt;개발자 모드로 시작하기&lt;/h2&gt;
+&lt;p&gt;그럼 이제 만들어진 크롬 익스텐션을 크롬에 넣어봅시다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;먼저 &lt;a href=&quot;chrome://extensions/&quot;&gt;chrome://extensions/&lt;/a&gt; 에 들어가서 우측 상단에 있는 개발자 모드를 On 으로 바꿉시다.&lt;/li&gt;
+  &lt;li&gt;좌측 상단의 &lt;strong&gt;압축해제된 확정 프로그램을 로드합니다&lt;/strong&gt; 를 클릭한 후 manifest가 들어있는 폴더를 선택합니다.&lt;/li&gt;
+  &lt;li&gt;아래에 manifest의 title이 적혀있는 탭의 새로고침 버튼을 통해 변경사항을 저장할 수 있습니다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;테스트하기&quot;&gt;테스트하기&lt;/h2&gt;
+&lt;p&gt;이제 우측 상단에 크롬 익스텐션이 추가 됨을 확인하였습니다.
+이제 네이버 스포츠를 접속한 후에 F12를 눌러 개발자 도구를 확인해보면 콘솔창에 Hello World가 찍혀 있는 것을 확인해 볼 수 있습니다.
+manifest 에서 우리가 네이버 스포츠에 접근했을 시에만 main.js를 수행하도록 정의해 놓았으므로 다른 사이트에 들어갈 경우에는 콘솔창에 아무것도 뜨지 않습니다.&lt;/p&gt;
+
+&lt;center&gt;
+    &lt;img src=&quot;/images/Chrome-extension-1-console.png&quot; /&gt;
+    &lt;b&gt; &quot;이제 크롬 익스텐션을 만들 준비가 완료되었습니다&quot; &lt;/b&gt;
+&lt;/center&gt;
+
 &lt;h2 id=&quot;mainjs&quot;&gt;Main.js&lt;/h2&gt;
-&lt;p&gt;1편에서 manifest를 잘 만들었기때문에 이제 우리는 광고를 스킵하는 코드를 작성하기만 하면됩니다.
+&lt;p&gt;이제 우리는 광고를 스킵하는 코드를 작성하기만 하면됩니다.
 제가 생각했을때의 가장 좋은 방법은 &lt;strong&gt;광고 스킵버튼이 등장했을 때 자동으로 광고 버튼을 클릭한다&lt;/strong&gt; 였습니다.&lt;/p&gt;
 
 &lt;p&gt;하지만 정확히 광고 스킵버튼이 등장했을 때를 캐치하는건 Client 사이드에서는 쉽지 않았습니다.
@@ -129,7 +178,7 @@ apt는 dpkg 보다 높은 level의 tool 이므로 자동으로 dependency를 찾
 
 &lt;center&gt; &lt;img src=&quot;/images/Chrome-extension-2-scenario.png&quot; /&gt; &lt;/center&gt;
 
-&lt;h2 id=&quot;manifest&quot;&gt;Manifest&lt;/h2&gt;
+&lt;h2 id=&quot;manifest-1&quot;&gt;Manifest&lt;/h2&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
     &quot;name&quot;: &quot;Chrome-Auto-scriptor&quot;,
     &quot;version&quot;: &quot;1.0&quot;,
@@ -233,82 +282,8 @@ Publish된 &lt;a href=&quot;https://chrome.google.com/webstore/detail/chrome-aut
 &lt;p&gt;참고 : &lt;a href=&quot;https://developer.chrome.com/extensions/getstarted&quot;&gt;https://developer.chrome.com/extensions/getstarted&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 31 Jul 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/Chrome-extension-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/Chrome-extension-2/</guid>
-        
-        <category>Chrome-extension</category>
-        
-        <category>Javascript</category>
-        
-        <category>네이버 스포츠</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>간단한 Chrome-extension 제작해보기 (1)</title>
-        <description>&lt;p&gt;간단한 Chrome-extension 제작해보기 (1) - Manifest 편&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;시작하면서&quot;&gt;시작하면서&lt;/h2&gt;
-&lt;p&gt;회사에 입사하고 나서 한동안은 집-회사만을 반복하는 평일이 지나가더군요. 
-덕분에(?) 학생때는 그다지 주기적인 삶을 살지 않았기때문에 챙겨보지 못했던 야구경기를 챙겨볼 수 있게되었습니다.
-저는 주로 야구를 네이버 스포츠에 가서 보는데 TV 중계를 틀때마다 항상 광고가 나오곤 합니다. 
-그럼 매번 Skip 버튼을 눌러줘야하죠. 
-그리고 명색은 개발자인 저는 이런 생각을 합니다.&lt;/p&gt;
-&lt;center&gt; &lt;b&gt; &quot;이거 자동으로 Skip 해주는 소스를 짤 수 있지 않을까?&quot; &lt;/b&gt; &lt;/center&gt;
-
-&lt;h2 id=&quot;manifest&quot;&gt;Manifest&lt;/h2&gt;
-&lt;p&gt;크롬 익스텐션에서 일종의 config 역할을 하는것이 바로 manifest.json 파일입니다. 
-Text editor를 이용하여 manifest.json 파일을 만든 후 다음과 같이 아래에 입력해 보죠.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;name&quot;: &quot;Chrome-extension practice&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;description&quot;: &quot;Chrome-extension practice&quot;,
-    &quot;manifest_version&quot;: 2,
-    &quot;content_scripts&quot;: [
-        {
-            &quot;js&quot;: [&quot;main.js&quot;],
-            &quot;matches&quot;: [&quot;https://sports.naver.com/*&quot;],
-            &quot;run_at&quot;: &quot;document_end&quot;
-        }
-    ]
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;감이 좋으신 분들은 바로 아시겠지만, 위 Manifest를 통해서 우리가 만들어볼 크롬 익스텐션은 네이버 스포츠에 들어갔을때 document의 로딩이 끝난 후(DOM이 완료된 직후)에 main.js를 실행할 것입니다.
-일단은 간단하게 main.js에 &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log(&quot;Hello World&quot;);&lt;/code&gt; 를 입력한 후 위에서 만든 manifest와 같이 폴더에 넣어서 저장해 둡시다.&lt;/p&gt;
-
-&lt;h2 id=&quot;개발자-모드로-시작하기&quot;&gt;개발자 모드로 시작하기&lt;/h2&gt;
-&lt;p&gt;그럼 이제 만들어진 크롬 익스텐션을 크롬에 넣어봅시다.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;먼저 &lt;a href=&quot;chrome://extensions/&quot;&gt;chrome://extensions/&lt;/a&gt; 에 들어가서 우측 상단에 있는 개발자 모드를 On 으로 바꿉시다.&lt;/li&gt;
-  &lt;li&gt;좌측 상단의 &lt;strong&gt;압축해제된 확정 프로그램을 로드합니다&lt;/strong&gt; 를 클릭한 후 manifest가 들어있는 폴더를 선택합니다.&lt;/li&gt;
-  &lt;li&gt;아래에 manifest의 title이 적혀있는 탭의 새로고침 버튼을 통해 변경사항을 저장할 수 있습니다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;테스트하기&quot;&gt;테스트하기&lt;/h2&gt;
-&lt;p&gt;이제 우측 상단에 크롬 익스텐션이 추가 됨을 확인하였습니다.
-이제 네이버 스포츠를 접속한 후에 F12를 눌러 개발자 도구를 확인해보면 콘솔창에 Hello World가 찍혀 있는 것을 확인해 볼 수 있습니다.
-manifest 에서 우리가 네이버 스포츠에 접근했을 시에만 main.js를 수행하도록 정의해 놓았으므로 다른 사이트에 들어갈 경우에는 콘솔창에 아무것도 뜨지 않습니다.&lt;/p&gt;
-
-&lt;center&gt;
-    &lt;img src=&quot;/images/Chrome-extension-1-console.png&quot; /&gt;
-    &lt;b&gt; &quot;이제 크롬 익스텐션을 만들 준비가 완료되었습니다&quot; &lt;/b&gt;
-&lt;/center&gt;
-
-&lt;p&gt;&lt;br /&gt;
-다음에는 본격적으로 Javascript 코드 작성과 manifest 수정을 통해 크롬 익스텐션을 좀 더 확장해보도록 합시다.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;참고 : &lt;a href=&quot;https://developer.chrome.com/extensions/getstarted&quot;&gt;https://developer.chrome.com/extensions/getstarted&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 28 Jul 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/Chrome-extension-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/Chrome-extension-1/</guid>
+        <link>http://localhost:4000/Chrome-extension/</link>
+        <guid isPermaLink="true">http://localhost:4000/Chrome-extension/</guid>
         
         <category>Chrome-extension</category>
         

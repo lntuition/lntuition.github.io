@@ -18,25 +18,9 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/Chrome-extension-2/</loc>
+      <loc>http://localhost:4000/Chrome-extension/</loc>
       
         <lastmod>2019-07-31T00:00:00+09:00</lastmod>
-      
-
-      
-        <changefreq>daily</changefreq>
-      
-
-      
-          <priority>1.0</priority>
-      
-
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/Chrome-extension-1/</loc>
-      
-        <lastmod>2019-07-28T00:00:00+09:00</lastmod>
       
 
       
