@@ -65,4 +65,4 @@ apt는 dpkg 보다 높은 level의 tool 이므로 자동으로 dependency를 찾
 <center> <b> "앞으로도 지나가는 모든일에 재미를 붙일 수 있도록 해봐야겠습니다." </b> </center>
 
 ---
-참고 : [https://www.debian.org/doc/debian-policy/ch-controlfields.html](https://www.debian.org/doc/debian-policy/ch-controlfields.html)
+참고 : <https://www.debian.org/doc/debian-policy/ch-controlfields.html>

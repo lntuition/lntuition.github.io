@@ -200,4 +200,4 @@ Publish된 [Extension](https://chrome.google.com/webstore/detail/chrome-auto-scr
 <center> <b> "사소한 것에서 또 다른 재미있는 Toy Project를 찾아서 오겠습니다" </b> </center>
 
 ---
-참고 : [https://developer.chrome.com/extensions/getstarted](https://developer.chrome.com/extensions/getstarted)
+참고 : <https://developer.chrome.com/extensions/getstarted>
