@@ -78,6 +78,50 @@ TDD 에서는 코드를 작성하기 전에 해당 코드에 맞는 테스트를
 테스트를 다 작성했으니 `npm test`를 통해 test를 수행해보면 전부 실패합니다.
 
 ## Command
+Test의 코드를 만족하도록 src/commands 밑에 diff.js를 작성하였습니다.
+시간을 다루는 부분은 [Moment.js](https://momentjs.com/docs/) 을 이용하여 작성하였습니다.
+
+``` javascript
+const { Command } = require('@oclif/command');
+const moment = require('moment');
+
+class DiffCommand extends Command {
+  async run() {
+    const { args } = this.parse(DiffCommand);
+    let diffMinute = moment(args.endTime, 'HH:mm').diff(moment(args.startTime, 'HH:mm'), 'minutes');
+
+    let sign = '';
+    if (diffMinute < 0) {
+      diffMinute = -diffMinute;
+      sign = '-';
+    }
+    let hour = String(parseInt(diffMinute / 60)).padStart(2, '0');
+    let minute = String(diffMinute % 60).padStart(2, '0');
+
+    this.log(sign + hour + ":" + minute);
+  }
+}
+
+DiffCommand.description = `Print difference between two times`;
+DiffCommand.args = [
+  {
+    name: 'startTime',
+    required: true,
+  },
+  {
+    name: 'endTime',
+    required: true,
+  },
+]
+
+module.exports = DiffCommand;
+```
+
+코드를 살펴보면 oclif의 진가를 알아 볼 수 있습니다.
+만약 직접 CLI를 만든다고하면, argument를 파싱하는 것부터 해당 argument가 항상 필요로 하는것인지 선택적으로 필요한것인지 또는 flag를 이용하는 CLI 인지등을 직접 코드로 작성하여야 합니다.
+하지만 oclif에서는 args, flag 와 같은 옵션을 제공함으로서 해당 문제점을 해결하였습니다.
+위의 코드에서는 args의 option에 required 를 set 해주는 것만으로 해당 argument가 존재하지 않을 경우 알아서 oclif가 error를 throw 합니다.
+코드를 작성하고 다시 `npm test`를 수행하면 All pass 함을 알 수 있습니다.
 
 ## 끝내면서
 생각보다 너무 간단해서 놀랍지 않나요?
