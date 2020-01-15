@@ -4,7 +4,7 @@ title: "간단한 Chrome-extension 제작해보기"
 redirect_from:
     - /Chrome-extension-1/
     - /Chrome-extension-2/
-tags: [Chrome-extension, Javascript, 네이버 스포츠]
+tags: [Javascript]
 comments: true
 ---
 

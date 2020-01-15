@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "간단한 Debian-Package 제작해보기"
-tags: ["Debian", "Linux"]
+tags: ["Linux"]
 comments: true
 ---
 

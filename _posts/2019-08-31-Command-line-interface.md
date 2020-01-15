@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "oclif로 쉽고 빠르게 CLI 만들기"
-tags: ["Command-line-interface", "Javascript", "Open-source", "oclif"]
+tags: ["Javascript"]
 comments: true
 ---
 
