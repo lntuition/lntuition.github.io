@@ -13,6 +13,8 @@ avatar: https://avatars0.githubusercontent.com/u/34061042?s=460&v=4
 navigation:
   - name: Blog
     url: /
+  - name: About
+    url: /about
   - name: Tags
     url: /tags
   - name: Github
