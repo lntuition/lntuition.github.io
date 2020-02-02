@@ -17,8 +17,6 @@ navigation:
     url: /about
   - name: Tags
     url: /tags
-  - name: Github
-    url: https://github.com/lntuition
 
 # Pagination
 paginate: 5
