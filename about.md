@@ -19,5 +19,11 @@ permalink: /about/
 - 2019.02 ~ Now : Samsung Reasearch, Common Platform Team
 
 ### 프로젝트 : [Github](https://github.com/lntuition)
-- [pintOS](https://github.com/lntuition/pintOS) : 2017 Fall 서강대학교 운영체제 프로젝트
-- [koblog](https://github.com/lntuition/koblog) : 개발 블로그 피드 관리 서버[WIP]
+- [koblog](https://github.com/lntuition/koblog) : 
+개발 블로그 피드 관리 서버 [WIP]
+- [cJSON](https://github.com/DaveGamble/cJSON) : 
+오타 수정 ([PR#386](https://github.com/DaveGamble/cJSON/pull/386))
+- [uftrace](https://github.com/namhyung/uftrace) : 
+문자열 및 문자 프린팅 포맷 수정 ([PR#864](https://github.com/namhyung/uftrace/pull/864)),
+선택되지 않은 옵션 출력 제거 ([PR#904](https://github.com/namhyung/uftrace/pull/904)),
+메모리 누수 해결 ([PR#1044](https://github.com/namhyung/uftrace/pull/1044), [PR#1046](https://github.com/namhyung/uftrace/pull/1046), [PR#1056](https://github.com/namhyung/uftrace/pull/1056))
