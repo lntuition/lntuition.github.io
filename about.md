@@ -27,3 +27,9 @@ permalink: /about/
 문자열 및 문자 프린팅 포맷 수정 ([PR#864](https://github.com/namhyung/uftrace/pull/864)),
 선택되지 않은 옵션 출력 제거 ([PR#904](https://github.com/namhyung/uftrace/pull/904)),
 메모리 누수 해결 ([PR#1044](https://github.com/namhyung/uftrace/pull/1044), [PR#1046](https://github.com/namhyung/uftrace/pull/1046), [PR#1056](https://github.com/namhyung/uftrace/pull/1056))
+- [RustPython](https://github.com/RustPython/RustPython) :
+오타 수정 ([PR#1402](https://github.com/RustPython/RustPython/pull/1402)),
+int 타입변환시 base 설정 에러 메세지 수정 ([PR#1406](https://github.com/RustPython/RustPython/pull/1406)),
+int 타입변환시 진법과 underscore 사용시 에러 수정 ([PR#1420](https://github.com/RustPython/RustPython/pull/1420)),
+`int.to_byte`와 `int.from_bytes` 매개변수 에러 수정 ([PR#1429](https://github.com/RustPython/RustPython/pull/1429)),
+`int.from_byte` 에서 `array.array byte` like object를 받지못하는 에러 수정 ([PR#1438](https://github.com/RustPython/RustPython/pull/1438))
