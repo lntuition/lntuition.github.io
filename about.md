@@ -26,7 +26,7 @@ permalink: /about/
 - [uftrace](https://github.com/namhyung/uftrace) : 
 문자열 및 문자 프린팅 포맷 수정 ([PR#864](https://github.com/namhyung/uftrace/pull/864)),
 선택되지 않은 옵션 출력 제거 ([PR#904](https://github.com/namhyung/uftrace/pull/904)),
-메모리 누수 해결 ([PR#1044](https://github.com/namhyung/uftrace/pull/1044), [PR#1046](https://github.com/namhyung/uftrace/pull/1046), [PR#1056](https://github.com/namhyung/uftrace/pull/1056)), [PR#1119](https://github.com/namhyung/uftrace/pull/1119), [PR#1125](https://github.com/namhyung/uftrace/pull/1125)
+메모리 누수 해결 ([PR#1044](https://github.com/namhyung/uftrace/pull/1044), [PR#1046](https://github.com/namhyung/uftrace/pull/1046), [PR#1056](https://github.com/namhyung/uftrace/pull/1056), [PR#1119](https://github.com/namhyung/uftrace/pull/1119), [PR#1125](https://github.com/namhyung/uftrace/pull/1125))
 - [RustPython](https://github.com/RustPython/RustPython) :
 오타 수정 ([PR#1402](https://github.com/RustPython/RustPython/pull/1402)),
 int 타입변환시 base 설정 에러 메세지 수정 ([PR#1406](https://github.com/RustPython/RustPython/pull/1406)),
