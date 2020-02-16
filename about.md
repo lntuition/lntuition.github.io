@@ -33,3 +33,5 @@ int 타입변환시 base 설정 에러 메세지 수정 ([PR#1406](https://githu
 int 타입변환시 진법과 underscore 사용시 에러 수정 ([PR#1420](https://github.com/RustPython/RustPython/pull/1420)),
 `int.to_byte`와 `int.from_bytes` 매개변수 에러 수정 ([PR#1429](https://github.com/RustPython/RustPython/pull/1429)),
 `int.from_byte` 에서 `array.array byte` like object를 받지못하는 에러 수정 ([PR#1438](https://github.com/RustPython/RustPython/pull/1438))
+- [PyPika](https://github.com/kayak/pypika) :
+column에 iterable한 parameter 허용 ([PR#373](https://github.com/kayak/pypika/pull/373))
