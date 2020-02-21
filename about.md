@@ -19,8 +19,6 @@ permalink: /about/
 - 2019.02 ~ Now : Samsung Reasearch, Common Platform Team
 
 ### 프로젝트 : [Github](https://github.com/lntuition)
-- [koblog](https://github.com/lntuition/koblog) : 
-개발 블로그 피드 관리 서버 [WIP]
 - [cJSON](https://github.com/DaveGamble/cJSON) : 
 오타 수정 ([PR#386](https://github.com/DaveGamble/cJSON/pull/386))
 - [uftrace](https://github.com/namhyung/uftrace) : 
@@ -35,3 +33,5 @@ int 타입변환시 진법과 underscore 사용시 에러 수정 ([PR#1420](http
 `int.from_byte` 에서 `array.array byte` like object를 받지못하는 에러 수정 ([PR#1438](https://github.com/RustPython/RustPython/pull/1438))
 - [PyPika](https://github.com/kayak/pypika) :
 column에 iterable한 parameter 허용 ([PR#373](https://github.com/kayak/pypika/pull/373))
+- [tortoise-orm](https://github.com/tortoise/tortoise-orm) :
+unique field를 foreign key로 사용할 수 있도록 수정 ([PR#287](https://github.com/tortoise/tortoise-orm/pull/287))
