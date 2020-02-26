@@ -34,4 +34,5 @@ int 타입변환시 진법과 underscore 사용시 에러 수정 ([PR#1420](http
 - [PyPika](https://github.com/kayak/pypika) :
 column에 iterable한 parameter 허용 ([PR#373](https://github.com/kayak/pypika/pull/373))
 - [tortoise-orm](https://github.com/tortoise/tortoise-orm) :
-unique field를 foreign key로 사용할 수 있도록 수정 ([PR#287](https://github.com/tortoise/tortoise-orm/pull/287))
+unique field를 foreign key로 사용할 수 있도록 수정 ([PR#287](https://github.com/tortoise/tortoise-orm/pull/287)),
+`get_or_none`에서 multiple object fetch시에 예외 raise ([PR#298](https://github.com/tortoise/tortoise-orm/pull/298), [PR#299](https://github.com/tortoise/tortoise-orm/pull/299))
