@@ -37,5 +37,7 @@ column에 iterable한 parameter 허용 ([PR#373](https://github.com/kayak/pypika
 unique field를 foreign key로 사용할 수 있도록 수정 ([PR#287](https://github.com/tortoise/tortoise-orm/pull/287)),
 `get_or_none`에서 multiple object fetch시에 예외 raise ([PR#298](https://github.com/tortoise/tortoise-orm/pull/298), [PR#299](https://github.com/tortoise/tortoise-orm/pull/299)),
 annotation 에서 `F` expression을 사용할 수 있도록 구현 ([PR#301](https://github.com/tortoise/tortoise-orm/pull/301)),
-코드 구조 개선 및 오타 수정 ([PR#305](https://github.com/tortoise/tortoise-orm/pull/305), [PR#307](https://github.com/tortoise/tortoise-orm/pull/307)),
-limit과 offset에 음수값을 사용할 수 없도록 구현 ([PR#306](https://github.com/tortoise/tortoise-orm/pull/306))
+코드 구조 개선 및 오타 수정 ([PR#305](https://github.com/tortoise/tortoise-orm/pull/305), [PR#307](https://github.com/tortoise/tortoise-orm/pull/307), [PR#316](https://github.com/tortoise/tortoise-orm/pull/316), [PR#317](https://github.com/tortoise/tortoise-orm/pull/317)),
+limit과 offset에 음수값을 사용할 수 없도록 구현 ([PR#306](https://github.com/tortoise/tortoise-orm/pull/306)),
+update에 Function을 사용할 수 있도록 구현 ([PR#308](https://github.com/tortoise/tortoise-orm/pull/308)),
+source_field를 사용한 모델에서 Function이 작동하지 않는 버그 수정 ([PR#311](https://github.com/tortoise/tortoise-orm/pull/311))
