@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "도커 이미지에서 Python 스크립트 실행시 UTF-8 출력 에러 해결하기"
-tags: ["Docker"]
+tags: ["Python"]
 comments: true
 ---
 
